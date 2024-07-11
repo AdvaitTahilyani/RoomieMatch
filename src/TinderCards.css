@@ -1,0 +1,179 @@
+.card {
+    position: relative;
+    width: 600px;
+    padding: 20px;
+    max-width: 85vw;
+    height: 50vh;
+    border-radius: 20px;
+    background-size: cover;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-20px) scale(1.03);
+    box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.card > h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px 15px;
+    max-width: calc(100% - 20px);
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tinderCards_cardContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    perspective: 1000px;
+}
+
+.swipe {
+    position: absolute;
+    transition: 300ms transform ease-in-out;
+    transform-origin: bottom center;
+}
+
+.swipeButtons {
+    position: fixed;
+    bottom: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.swipeButtons .MuiIconButton-root {
+    background-color: white;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.swipeButtons .MuiIconButton-root:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.3);
+}
+
+
+.swipeButtons_left {
+  color: #ff5252;
+}
+
+.swipeButtons_left:hover {
+  background-color: #ffe5e5;
+}
+
+.swipeButtons_right {
+  color: #4caf50;
+}
+
+.swipeButtons_right:hover {
+  background-color: #e8f5e9;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .swipeButtons {
+        bottom: 5vh;
+    }
+
+    .swipeButtons .MuiIconButton-root {
+        padding: 10px;
+    }
+}
+
+
+
+.filterForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .filterForm label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .filterForm select,
+  .filterForm input[type="text"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .filterForm select {
+    cursor: pointer;
+  }
+  
+  .filterForm select:hover,
+  .filterForm input[type="text"]:hover {
+    border-color: #888;
+  }
+  
+  .filterForm select:focus,
+  .filterForm input[type="text"]:focus {
+    outline: none;
+    border-color: #555;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 600px) {
+    .filterForm {
+      flex-direction: column;
+    }
+  }
+  
+
+  .filterButton {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .filterButton:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .filterButton span.arrow {
+    margin-left: 8px;
+  }
+  
+  .filterButton.open {
+    background-color: #f0f0f0;
+  }

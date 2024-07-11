@@ -1,0 +1,62 @@
+.profilePaper {
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.profileForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profileForm > * {
+    width: 100%;
+}
+
+/* Style for buttons */
+.profileForm button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profileForm button:hover {
+    background-color: #4caf50; /* Change to desired hover color */
+}
+
+/* Style for text fields */
+.profileForm input[type="text"],
+.profileForm input[type="email"],
+.profileForm input[type="file"],
+.profileForm textarea,
+.profileForm select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.profileForm input[type="text"]:focus,
+.profileForm input[type="email"]:focus,
+.profileForm input[type="file"]:focus,
+.profileForm textarea:focus,
+.profileForm select:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+.profileForm label {
+    font-weight: bold;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: yourColorHere !important;
+}

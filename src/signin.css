@@ -1,0 +1,64 @@
+.signin-title, .signin-subtitle {
+  font-family: 'Roboto', sans-serif;
+}
+
+.signin-title {
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+.signin-subtitle {
+  margin-bottom: 2em;
+  text-align: center;
+  color: #666;
+}
+
+
+.google-signin-button {
+  background-color: #4285F4;
+  color: white;
+  text-transform: none;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-signin-button img {
+  margin-right: 10px;
+}
+
+.google-signin-button:hover, .google-signin-button:focus {
+  background-color: #357ae8;
+  box-shadow: none;
+}
+
+
+.google-signin-button {
+  background-color: #4285F4;
+  color: white;
+  text-transform: none;
+  padding: 10px 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.google-signin-button img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+
+.google-signin-button-text {
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -1,0 +1,13 @@
+.profilePaper {
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.profileTitle {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}

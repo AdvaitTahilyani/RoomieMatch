@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border: transparent;
+}
+
+.header__left, .header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__logoContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    height: 50px;
+    object-fit: contain;
+}
+
+.header__icon {
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.header__icon:hover {
+    transform: scale(1.2);
+    color: #000;
+}
+
+.header .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.header__left > *:not(:first-child), .header__right > *:not(:first-child) {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .header__logo {
+        height: 40px;
+    }
+    
+    .header__icon {
+        font-size: 0.9rem;
+    }
+}

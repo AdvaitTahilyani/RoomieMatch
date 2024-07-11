@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid orange;
+    position: relative;
+}
+
+.header__logoContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    height: 50px;
+    object-fit: contain;
+}
